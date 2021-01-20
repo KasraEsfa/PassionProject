@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./img/icon.png">
+    <title>growth of technology</title>
 </head>
 <style>
     @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
@@ -106,7 +107,7 @@ p {
 	list-style: none;
 	position: absolute;
 	background-color: rgb(31, 30, 30);
-	width: 100vw;
+	width: 60vw;
 	height: 100vh;
 	left: 100%;
 	top: 0;
@@ -218,8 +219,8 @@ p {
   position: absolute;
   right: 0;
   bottom: 0;
-  max-width: 110vw;
-  max-height: 110vh;
+  max-width: 120vw;
+  max-height: 120vh;
   z-index: -50;
 }
 #hero::after {
@@ -462,6 +463,92 @@ p {
 	z-index: -1;
 }
 /* End About Section */
+/* contact Section */
+#contact .contact {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#contact .contact-items {
+	width: 400px;
+}
+#contact .contact-item {
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: .3s ease box-shadow;
+}
+#contact .contact-item:hover {
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#contact .icon {
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#contact .contact-info h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+#contact .contact-info h2 {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
+}
+/*End contact Section */
+
+/* topic Section */
+#topic .contact {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#topic .contact-items {
+	width: 400px;
+}
+#topic .contact-item {
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: .3s ease box-shadow;
+}
+#topic .contact-item:hover {
+	box-shadow: 0px 0px 5px 0 #0000002c;
+}
+#topic .icon {
+	width: 70px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#topic .contact-info h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+#topic .contact-info h2 {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
+}
+/*End of topic section*/
+
 /* Keyframes */
 @keyframes hamburger_puls {
 	0% {
@@ -598,6 +685,40 @@ p {
 		padding-left: 20px;
 	}
 	/* End contact  */
+
+	/* topic  */
+	#topic .contact {
+		flex-direction: column;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		min-width: 20vh;
+	}
+	#topic .contact-items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+	#topic .contact-item {
+		width: 30%;
+		margin: 0;
+		flex-direction: row;
+	}
+	#topic .contact-item .icon {
+		height: 100px;
+		width: 100px;
+	}
+	#topic .contact-item .icon img {
+		object-fit: contain;
+	}
+	#topic .contact-item .contact-info {
+		width: 100%;
+		text-align: left;
+		padding-left: 20px;
+	}
+	/* End topic  */
 }
 /* End Media Query For Tablet */
 
@@ -618,7 +739,7 @@ p {
 		display: inline-block;
 	}
 	#header .nav-list ul li a {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 	}
 	#header .nav-list ul a:after {
 		display: none;
@@ -643,8 +764,11 @@ p {
               <ul>
                 <li><a href="#hero" data-after="Home">Home</a></li>
                 <li><a href="#services" data-after="Service">About</a></li>
-                <li><a href="#projects" data-after="Projects">Projects</a></li>
-                <li><a href="#about" data-after="About">My Thoughts</a></li>
+                <li><a href="#projects" data-after="Projects">Human Advancement</a></li>
+				<li><a href="#about" data-after="About">My Thoughts</a></li>
+				
+				<li><a href="#topic" data-after="About">Quotes</a></li>
+				<li><a href="#contact" data-after="About">Relevant Question</a></li>
               </ul>
             </div>
           </div>
@@ -686,7 +810,11 @@ p {
             <div class="service-item">
               <h2>Use of fire</h2>
               <p>Early humans didn’t find a way to use the fire in a controlled way. This means we often lived in a dark, cold, and scary place. It was about 125,000 years ago that we started using fire in a controlled way, and it took a lot of trial and error.</p>
-            </div>
+			</div>
+			<div class="service-item">
+				<h2>Writing began</h2>
+				<p>It was about 3000 B.C. when we actually started putting our ideas into a pictorial form. Until that point, most of the ideas that humans generated would have evaporated. Imagine if we had no science books. Each generation would have to discover Newton’s laws and all other scientific theories by themselves. With writing, we could stand on the sholders of others.</p>
+			</div>
           </div>
         </div>
       </section>
@@ -696,57 +824,34 @@ p {
       <section id="projects">
         <div class="projects container">
           <div class="projects-header">
-            <h1 class="section-title">Recent <span>Projects</span></h1>
+            <h1 class="section-title">human <span>Advancement</span></h1>
           </div>
           <div class="all-projects">
             <div class="project-item">
               <div class="project-info">
-                <h1>Project 1</h1>
-                <h2>Coding is Love</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+                <h1>Transportation</h1>
+                <p>We discovered the wheel about 4,000 years ago. This allowed us to travel fast and transfer products and humans between regions. The rest is history. In short, we spent a lot of time in a trial-and-error mode to find the right places to live and the right things to eat. Given the short life spans and absence of settlements, ideas could not get transmitted. As we discovered ways to keep us warm and bright at night, got spare time due to agriculture we started putting our brains to a good use.</p>
               </div>
               <div class="project-img">
-                <img src="./img/img-1.png" alt="img">
+                <img src="./img/transportation.jpg" alt="img">
               </div>
             </div>
             <div class="project-item">
               <div class="project-info">
-                <h1>Project 2</h1>
-                <h2>Coding is Love</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+                <h1>Lack of Communication</h1>
+                <p>Until a few thousand years ago, these experiments were local, and there was little we could learn from others’ experiments. Thus, a guy in Ethiopia might have been trying to master fire control even 5,000 years after a guy in Sweden has already mastered it. There was no easy way to transfer ideas given the lack of wheel (to enable quick movement), writing systems, broadcast communication, etc.</p>
               </div>
               <div class="project-img">
-                <img src="./img/img-1.png" alt="img">
+                <img src="./img/lightkeys.jpg" alt="img">
               </div>
             </div>
             <div class="project-item">
               <div class="project-info">
-                <h1>Project 3</h1>
-                <h2>Coding is Love</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
+                <h1>Low Population</h1>
+                <p>The population was also too low to improve the odds of experimentation. Lastly, we were too focused on survival to afford us the time to innovate. Agriculture liberated us from the focus on the daily search for food.</p>
               </div>
               <div class="project-img">
-                <img src="./img/img-1.png" alt="img">
-              </div>
-            </div>
-            <div class="project-item">
-              <div class="project-info">
-                <h1>Project 4</h1>
-                <h2>Coding is Love</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-              </div>
-              <div class="project-img">
-                <img src="./img/img-1.png" alt="img">
-              </div>
-            </div>
-            <div class="project-item">
-              <div class="project-info">
-                <h1>Project 5</h1>
-                <h2>Coding is Love</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad, iusto cupiditate voluptatum impedit unde rem ipsa distinctio illum quae mollitia ut, accusantium eius odio ducimus illo neque atque libero non sunt harum? Ipsum repellat animi, fugit architecto voluptatum odit et!</p>
-              </div>
-              <div class="project-img">
-                <img src="./img/img-1.png" alt="img">
+                <img src="./img/population.jpg" alt="img">
               </div>
             </div>
           </div>
@@ -759,7 +864,7 @@ p {
         <div class="about container">
           <div class="col-left">
             <div class="about-img">
-              <img src="./img/pexels-pixabay-356043.jpg" alt="img">
+              <img src="./img/lightbulb.jpg" alt="img">
             </div>
           </div>
           <div class="col-right">
@@ -768,7 +873,57 @@ p {
           </div>
         </div>
       </section>
-      <!-- End About Section -->
+	  <!-- End About Section -->
+	  <!-- topic section -->
+  <section id="topic">
+    <div class="contact container">
+      <div><h1 class="section-title">Quo<span>tes</span></h1></div>
+      <div class="contact-items">
+        <div class="contact-item">
+		  <div class="icon"><img src="./img/albert einstein.png"/></div>
+          <div class="contact-info">
+			<h2>“It has become appallingly obvious that our technology has exceeded our humanity.”</h2>
+			<h3>Albert Einstein</h3>
+        </div>
+	</div>
+	<div class="contact-item">
+		<div class="icon"><img src="./img/Bill Gates.png"/></div>
+		<div class="contact-info">
+		  <h2>“The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life.”</h2>
+		  <h3>Bill Gates</h3>
+	  </div>
+  </div>
+  <div class="contact-item">
+	<div class="icon"><img src="./img/Tim Berners.png"/></div>
+	<div class="contact-info">
+	  <h2>“The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past.”</h2>
+	  <h3>Tim Berners</h3>
+  </div>
+</div>
+</div>
+</div>
+	<!-- End of topic section -->
+	  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div><h1 class="section-title">Relevant <span>Questions</span></h1></div>
+      <div class="contact-items">
+        <div class="contact-item">
+		  <div class="icon"><img src="./img/question.png"/></div>
+          <div class="contact-info">
+            <h2>Will technology grow faster than it does now?</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="img/question.png"/></div>
+          <div class="contact-info">
+            <h2>What motivated humans to discover/invent new things?</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
 </body>
 <script>
     const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
